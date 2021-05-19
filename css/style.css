@@ -1359,16 +1359,19 @@ p {
     margin: 0 auto;
     padding: 0 80px;
   }
+
   .large-number {
     font-size: 62px;
     line-height: 64px;
   }
+
   .number__heading {
     font-size: 42px;
     line-height: 44px;
     font-weight: 700;
     margin-bottom: 120px;
   }
+
   .number__item-heading {
     text-align: left;
     font-size: 30px;
@@ -1599,4 +1602,62 @@ p {
     color: #49494b;
     border-bottom: 1px solid #d8f664;
   }
+}
+
+
+.galery {
+  width: 100%;
+}
+
+.galery__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.galery__heading {
+  font-size: 42px;
+  line-height: 1;
+  color: rgb(73, 73, 75);
+}
+
+.galery__flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  margin-left: -10px;
+}
+
+.galery-item {
+  width: calc(25% - 20px);
+  max-height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.galery-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.galery-button-more {
+  width: 240px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(73, 73, 75);
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) { 
+  .galery-item {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .galery__wrapper {
+    padding: 40px;
+  }
+
 }
